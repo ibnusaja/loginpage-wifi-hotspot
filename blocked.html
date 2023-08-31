@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blocked</title>
+    <style>
+        /*
+        @import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400&display=swap');
+        */
+        @import url('./fonts/google-fonts-sans.css');
+        body {
+            font-family: 'Google Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Maaf, anda salah memasukkan voucher, silahkan cek kemabali voucher anda.</h2>
+    <br>
+    <h2>Anda bisa mengecek passowrd default pada halaman About</h2>
+    <br>
+    <h2 id="redirectMessage"> Akan re-direct ke halaman Login dalam XX detik </h2>
+
+    <script>
+        // ini akan script redirect
+        let countdown = 6;
+        const redirectMessage = document.getElementById('redirectMessage');
+
+        function updateRedirectMessage() {
+            redirectMessage.textContent = `Akan re-direct ke halaman Login dalam ${countdown} detik`;
+        }
+
+        const countdownInterval = setInterval(function() {
+            countdown -= 1;
+            updateRedirectMessage();
+            if (countdown === 0) {
+                clearInterval(countdownInterval);
+                window.location.href = "index.html";
+            }
+        }, 1000); // 1000 ms = 1 detik, tinggal ko sesuaikan
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status - Portal Wifi Voucher</title>
+    <!--
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    -->
+    <link href="./tailwind.min.css" rel="stylesheet">
+    <style>
+        /*
+        @import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400&display=swap');
+        */
+        @import url('./fonts/google-fonts-sans.css');
+        body {
+            font-family: 'Google Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex justify-center items-center">
+    <div class="container mx-auto p-4 bg-white rounded-xl shadow-lg max-w-md">
+        <div class="justify-center flex mb-6">
+            <h2 class="text-2xl font-semibold w-20">Status</h2>
+            <svg fill="none" viewBox="0 0 24 23" stroke-width="1.1" stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
+        </svg>          
+        </div>
+        <table class="w-full table-auto">
+            <tbody class="text-center">
+                <tr>
+                    <td class="px-4 py-2">IP Perangkat</td>
+                    <td class="px-4 py-2"><span id="ip-address">192.168.1.100</span></td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-2">MAC Address</td>
+                    <td class="px-4 py-2"><span id="mac-address">00:1A:2B:3C:4D:5E</span></td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-2">Kode Voucher</td>
+                    <td class="px-4 py-2"><span id="voucher-code">1234567890</span></td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-2">Durasi</td>
+                    <td class="px-4 py-2"><span id="duration">6 Jam</span></td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-2">Sisa Kuota</td>
+                    <td class="px-4 py-2"><span id="duration">9999 GB</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="mt-8 flex justify-center">
+            <a href="about.html" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md transition duration-300">Tentang Kami</a>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--- jadi pada data ini, hanya dump data alais data sample-->
